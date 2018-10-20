@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>D3 Assignment 3</title>
+
+	    <!-- Libraries -->
+	    <!-- jQuery -->
+	    <script src="https://code.jquery.com/jquery.min.js"></script>
+	    <!-- D3 -->
+	    <script src="https://d3js.org/d3.v4.js"></script>
+
+	    <!-- Bootstrap, ignore for the tutorial -->
+			<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+			integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	    <!-- Our files -->
+	    <!-- main.css -->
+	    <link rel="stylesheet" href="css/main.css" />
+
+	    <!-- main js file :) -->
+		<script src="js/visualization.js"></script>
+		<script src="https://d3js.org/d3.v4.js"></script>
+		<!-- Boundaries taken from https://github.com/seattleio/seattle-boundaries-data-->
+    	<script src = "data/neighborhoods.geojson"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<section id="title">
+					<h1>Assignment 3 Interactive Visualization</h1>
+			</section>
+
+			<div id="info">
+				<p>Mouse over a point for more information</p>
+			</div>
+			<div id ="visualization">
+				<div id="svg"></div>
+			</div>
+
+
+
+		<div id="controls">
+
+			<div id="count">
+				<h2> Number of Crimes </h2>
+				<p id="crime-count"></p>
+			</div>
+
+				<div id="sliderContainer">
+					<h2>Month:</h2>
+					<input id="timeslide" type="range" min="0" max="11" value = "0" step ="1"/><br>
+					<span id ="range">January</span> 2018
+				</div>
+
+				<!-- sector dropdown selector -->
+				<div id="dropDownContainer">
+					<h2>Crime Location:</h2>
+					<div id="crimeSector">
+						<select id="form-select">
+							<option value="all">All</option>
+							<option value="b">Sector B</option>
+							<option value="c">Sector C</option>
+							<option value="d">Sector D</option>
+							<option value="e">Sector E</option>
+							<option value="f">Sector F</option>
+							<option value="g">Sector G</option>
+							<option value="j">Sector J</option>
+							<option value="k">Sector K</option>
+							<option value="l">Sector L</option>
+							<option value="m">Sector M</option>
+							<option value="n">Sector N</option>
+							<option value="o">Sector O</option>
+							<option value="q">Sector Q</option>
+							<option value="r">Sector R</option>
+							<option value="s">Sector S</option>
+							<option value="u">Sector U</option>
+							<option value="w">Sector W</option>
+						</select>
+					</div>
+				</div>
+
+
+
+				<!--buttons-->
+				<div id="checkBoxContainer">
+						<h2>Event Type:</h2>
+						<div id = "types"></div>
+							<input type="checkbox" class="myCheckbox" value="burglary"> Burglary
+								<div class="legend" id="c1"></div></br>
+							<input type="checkbox" class="myCheckbox" value="liquor violations"> Liquor Violation
+								<div class="legend" id="c2"></div></br>
+							<input type="checkbox" class="myCheckbox" value="narcotics complaints" checked> Narcotics Complaints
+								<div class="legend" id="c3"></div></br>
+							<input type="checkbox" class="myCheckbox" value="assaults"> Assault
+								<div class="legend" id="c4"></div></br>
+							<input type="checkbox" class="myCheckbox" value="trespass" checked> Trespass
+								<div class="legend" id="c5"></div></br>
+							<input type="checkbox" class="myCheckbox" value="arrest"> Arrest
+								<div class="legend" id="c6"></div></br>
+
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+
+</html>

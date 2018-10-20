@@ -1,0 +1,148 @@
+html, body{
+ background-color: #ECF2F7;
+ /*background-color: #A6AAC6;
+ background-image: linear-gradient(to bottom,#A6AAC6, #8397B9);*/
+ background-image: linear-gradient(to bottom,#ECF2F7, #9DA6C4);
+ height: 100%;
+background-size: cover;
+
+}
+
+h1, h2 {
+    left: 10px;
+    font-size: 2.0em;
+    font-weight: 300;
+    color: #6b6b6b;
+    /*color:white;*/
+
+
+}
+h2 {
+    top: 30px;
+    font-size: 1em;
+		font-weight: 500;
+}
+
+p {
+    white-space: pre;
+    font-size: 1.0em;
+    font-weight: 200;
+	color: #6b6b6b;
+}
+
+#info {
+    height: 125px;
+    width: auto;
+    box-shadow: 1px 1px 5px #4E546C;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+		padding-bottom: 30px;
+}
+
+/* REMOVE .incident FILL CSS */
+.hover {
+    fill: black;
+		opacity: .9;
+}
+
+
+#count {
+	display:inline-block;
+	width: 200px;
+	font-size: 1.0em;
+	font-weight: 200;
+	padding-bottom: 20px;
+	padding-top:20px;
+}
+
+
+/* ADD CSS FOR #sliderContainer */
+#sliderContainer {
+	display:inline-block;
+    width: 200px;
+    font-size: 1.0em;
+    font-weight: 200;
+}
+
+#dropDownContainer {
+	display:inline-block;
+    width: 200px;
+    font-size: 1.0em;
+    font-weight: 200;
+		padding-top: 50px;
+}
+
+#checkBoxContainer{
+	display:inline-block;
+    width: 200px;
+    font-size: 1.0em;
+    font-weight: 200;
+    padding-top: 50px;
+		padding-bottom: 40px;
+}
+
+.types{
+    font-size: 1.0em;
+    font-weight: 200;
+}
+
+#visualization {
+    border-radius: 25px;
+    width: 710px;
+    float: left;
+    border-top: 0;
+    text-align: center;
+    border-right: 0px;
+		box-shadow: 1px 1px 5px #4E546C;
+		background-color: rgba(255, 255, 255, 0.9);
+}
+
+#controls {
+    border-radius: 25px;
+	text-align: center;
+	width: 400px;
+	font-size: 1.0em;
+	font-weight: 200;
+	display: inline-block;
+    margin-left: 20px;
+	box-shadow: 1px 1px 5px #4E546C;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+#svg {
+    width: 500px;
+}
+
+.legend {
+	 display: inline-block;
+	 width:10px;
+	 height:10px;
+	 border-radius: 50%;
+}
+
+#c1 {
+	background-color: rgba(215,25,28, 0.7);
+}
+
+#c2 {
+	background-color: rgba(123,50,148, 0.7);
+}
+
+#c3 {
+	background-color: rgba(0,157,255, 0.7);
+}
+
+#c4 {
+	background-color: rgba(223,194,125, 0.7);
+}
+
+#c5 {
+	background-color: rgba(0,136,55, 0.7);
+}
+
+#c6 {
+	background-color: rgba(244,66,241, 0.7);
+}
